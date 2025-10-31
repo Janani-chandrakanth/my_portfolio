@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light mode styles */
+.light {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f3f4f6;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+}
+
+.light body {
+  background: linear-gradient(to bottom right, #fdf2f8, #fae8ff, #f3e8ff);
+  color: #111827;
+}
+
+.light .bg-black {
+  background: #ffffff !important;
+}
+
+.light .bg-slate-900 {
+  background: #f9fafb !important;
+}
+
+.light .text-white {
+  color: #111827 !important;
+}
+
+.light .text-gray-300 {
+  color: #4b5563 !important;
+}
+
+.light .text-gray-400 {
+  color: #6b7280 !important;
+}
+
+.light .bg-white\/5,
+.light .bg-white\/10 {
+  background: rgba(0, 0, 0, 0.05) !important;
+}
+
+.light .border-white\/10,
+.light .border-white\/20 {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.light .backdrop-blur-md {
+  background: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.5s ease-out;
+}
