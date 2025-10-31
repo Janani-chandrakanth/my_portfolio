@@ -13,7 +13,7 @@ export default function Hero() {
           {/* Profile image container */}
           <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-purple-500/50 group-hover:border-pink-500/50 transition-all duration-300 shadow-2xl">
             <img 
-              src="/src/assets/JANANI C.jpg"
+              src="/JANANI_C.jpg"
               alt="Janani Chandrakanth"
               className="w-full h-full object-cover object-[70%_35%]"
             />
